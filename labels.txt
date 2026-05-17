@@ -1,0 +1,3 @@
+0 reciclaje
+1 basurero
+2 fuera_de_muestreo
