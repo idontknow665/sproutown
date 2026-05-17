@@ -29,7 +29,7 @@ def inicio():
     return {"mensaje": "API de Mochila Activa para Thunkable"}
 
 @app.post("/predecir")
-async def predecir(file: UploadFile = File(...)):
+async def predecir(file: bytes = File(...)):
     contents = await file.read()
     image = Image.open(io.BytesIO(contents)).convert("RGB")
     img_array = np.array(image)
